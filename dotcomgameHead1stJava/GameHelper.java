@@ -52,6 +52,7 @@ public class GameHelper {
             vector = rd.nextBoolean();
             startRow = rd.nextInt(72-65)+65; // Max: 72 is Exclusive, Min: 65 is Inclusive.
             startColumn = rd.nextInt(8-1)+1; // Max: 8 is Exclusive, Min: 1 is Inclusive.
+            // The CELL need to be formed here to cross-check with Store and beyond.
             cell = String.format("%c%d",startRow,startColumn); // New option. The old option is below this line.
 //            cell = (char) startRow + Integer.toString(startColumn);
         } while (Store.contains(cell));
